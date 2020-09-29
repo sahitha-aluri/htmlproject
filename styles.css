@@ -1,0 +1,147 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:  darkgray;
+    height: 52px;
+    margin: 0;
+    align-items: center;
+}
+
+ul > li {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 6rem;
+    color: white;
+}
+
+ul > li:hover {
+    background-color: brown;
+}
+
+.hero-section {
+    height: 30vh;
+    background-repeat: unset;
+    background-size: 100%;
+    background-image: url("../htmlproject/sample-image.jpg");
+    text-decoration-color:red;
+    overflow: hidden;
+    padding: 0 3rem 0 8rem;
+}
+
+
+h3 {
+    color: black !important;
+}
+
+
+.sectionOne {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionOne > div  {
+    background-color: thistle;
+    height: 30vh;
+    /* margin: 0.5rem;
+    border-radius: 3px; */
+}
+
+.sectionOne > :nth-child(1) {
+    width: 70%;
+}
+
+
+.sectiontwo {
+    display: flex;
+    height: 35vh;
+    justify-content: space-between; 
+}
+
+.sectiontwo > div {
+    height: 100%;
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 10px 0 10px;
+}
+
+.sectiontwo > div > div {
+    border: 1px solid black;
+    height: 49%;
+}
+
+
+.sectionthree {
+    height: 30vh;
+    margin: 10px;
+}
+
+footer {
+    display: flex; 
+    justify-content: space-around;
+    height: 4rem;
+    background-color: lightslategray;
+    align-items: center;
+}
+
+
+@media(max-width: 700px) {
+    ul {
+        display:  flex; 
+        flex-direction: column;
+        height: 170px;
+        padding: 0;
+        
+    } 
+
+    ul > li {
+        width: 100%;
+    }
+
+    .sectionOne {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sectionOne > div {
+        width: 98% !important;
+    }
+
+    .sectiontwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sectiontwo > div {
+        width: 97%;
+    }
+    .sectiontwo > div > div  {
+        width: 100%;
+        height: 15vh;
+    }
+   .sectionthree{
+       font-size: medium;
+       background-color: brown;
+   }
+}
